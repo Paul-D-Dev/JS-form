@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact form</title>
+</head>
+<body>
+    <main>
+        <h1>Contact form</h1>
+
+        <form action="" id="form">
+            <label for="firstname">Firstname</label>
+            <input type="text" name="firstname" autofocus required>
+
+            <label for="lastname">Lastname</label>
+            <input type="text" name="lastname" required>
+
+            <label for="email">Email</label>
+            <input type="email" name="email" required>
+
+            <label for="mobile">Mobile</label>
+            <input type="tel" required>
+
+            <label for="offer">Offers</label>
+            <select name="offer" id="select-offer">
+                <option value="1">Discover</option>
+                <option value="2">Haut de gamme</option>
+                <option value="3">Prestige</option>
+            </select>
+
+            <label for="date">Date</label>
+            <input type="datetime-local" name="date">
+
+            <label for="description">Description</label>
+            <textarea 
+                name="description"
+                id="description"
+                cols="30"
+                rows="10"
+                placeholder="Describe your booking">
+            </textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+        
+    </main>
+</body>
+
+<script src="app.js"></script>
+</html>
